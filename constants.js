@@ -1,0 +1,7 @@
+export const Events = [
+   'CHANNEL_DELETE',
+   'GUILD_CREATE',
+   'GUILD_MEMBER_REMOVE',
+   'RELATIONSHIP_REMOVE',
+   'CHANNEL_CREATE',
+];
