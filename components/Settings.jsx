@@ -37,6 +37,7 @@ export default class Settings extends React.Component {
                description='Display desktop notifications even when discord is focused.'
                checked={settings.get('desktop-focus', false)}
                onChange={() => settings.toggle('desktop-focus', false)}
+               endDivider={false}
             />
          </Category>
          <Category
@@ -69,6 +70,7 @@ export default class Settings extends React.Component {
                description='Display notifications when someone cancells their friend request.'
                checked={settings.get('friend-cancel', true)}
                onChange={() => settings.toggle('friend-cancel', true)}
+               endDivider={false}
             />
          </Category>
          <Category
@@ -130,6 +132,7 @@ export default class Settings extends React.Component {
                value={settings.get('groupText', "You've been removed from the group %groupname")}
                onChange={v => settings.set('groupText', v)}
                description='The text the notification will have when you get kicked from a group chat.'
+               endDivider={false}
             />
          </Category>
       </div >);
