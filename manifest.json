@@ -1,12 +1,13 @@
 {
    "name": "Relationships Notifier",
+   "description": "Notifications for friend removal, friend request cancel, group removal and server kick/ban.",
    "authors": [
       {
          "name": "eternal",
          "id": "263689920210534400"
       }
    ],
-   "description": "Notifications for friend removal, friend request cancel, group removal and server kick/ban.",
    "version": "1.0.0",
+   "main": "dist",
    "id": "eternal.relationships-notifier"
 }

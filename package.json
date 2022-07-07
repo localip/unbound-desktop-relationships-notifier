@@ -1,0 +1,17 @@
+{
+   "name": "relationships-notifier",
+   "version": "1.0.0",
+   "description": "Notifications for friend removal, friend request cancel, group removal and server kick/ban.",
+   "main": "dist/index.js",
+   "author": "eternal <eternal.git@gmail.com> (https://github.com/localip)",
+   "license": "Unlicensed",
+   "scripts": {
+      "build": "swc src -d dist --delete-dir-on-start",
+      "package": "rm -rf packer && mkdir packer && cp -r manifest.json packer/manifest.json && cp -r dist packer/dist && asar pack packer packed.asar && rm -rf packer"
+   },
+   "devDependencies": {
+      "@types/node": "^17.0.29",
+      "@types/react": "^18.0.8",
+      "discord-types": "^1.3.26"
+   }
+}

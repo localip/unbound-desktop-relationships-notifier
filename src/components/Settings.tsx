@@ -1,8 +1,14 @@
-import { FormText, FormTitle, Category, Icon } from '@components';
+import { FormText, FormTitle } from '@components/discord';
 import { Switch, TextInput } from '@components/settings';
+import { Category, Icon } from '@components';
+import { makeStore } from '@api/settings';
 import React from 'react';
 
-export default class Settings extends React.Component {
+interface SettingsProps {
+   settings: ReturnType<typeof makeStore>;
+}
+
+export default class Settings extends React.Component<SettingsProps>{
    render() {
       const { settings } = this.props;
 
@@ -135,6 +141,6 @@ export default class Settings extends React.Component {
                endDivider={false}
             />
          </Category>
-      </div >);
+      </div>);
    }
 }
