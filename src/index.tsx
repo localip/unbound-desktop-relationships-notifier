@@ -114,7 +114,6 @@ export default class extends Plugin {
          if (needsFocus && document.hasFocus() || !needsFocus && !document.hasFocus()) return;
 
          const icon = this.#buildIconURL(instance);
-         console.log(icon);
          const notification = new Notification('Relationships Notifier', {
             body: data.content,
             icon
